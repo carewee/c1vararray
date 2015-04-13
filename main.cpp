@@ -35,22 +35,21 @@ int main() {
     while (choice != 'q') {
         cout << "enter operation [a/r/q] and number: ";
         cin >> choice >> number;
-        int i = check(a, number, size);
+
         
         // when the number is not already in the array
-        if (i != -1) {
+
             if (choice == 'a'){
                 addNumber(a, number, size);
-                break;
             }
             else if (choice == 'r'){
                 removeNumber(a, number, size);
-                break;
             }
-        }
         cout << "your numbers: ";
         output(a, size);
         cout << endl;
     }
+
+    }
     
-}
+
