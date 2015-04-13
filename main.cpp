@@ -12,7 +12,7 @@ int main() {
     char choice;
     int number;
     
-    while (choice != 'q') {
+    while (choice != 'q') { // While the user hasn't chosen to quit
         cout << "enter operation [a/r/q] and number: ";
         cin >> choice >> number;
             if (choice == 'a'){ // Adding a number
@@ -25,7 +25,6 @@ int main() {
         output(a, size);
         cout << endl;
     }
-
-    }
+}
     
 
