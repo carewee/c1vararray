@@ -15,13 +15,13 @@ int main() {
     while (choice != 'q') {
         cout << "enter operation [a/r/q] and number: ";
         cin >> choice >> number;
-            if (choice == 'a'){
+            if (choice == 'a'){ // Adding a number
                 addNumber(a, number, size);
             }
-            else if (choice == 'r'){
+            else if (choice == 'r'){ // Removing a number
                 removeNumber(a, number, size);
             }
-        cout << "your numbers: ";
+        cout << "your numbers: "; // Printing numbers
         output(a, size);
         cout << endl;
     }
