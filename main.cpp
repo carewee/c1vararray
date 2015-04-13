@@ -38,11 +38,15 @@ int main() {
         int i = check(a, number, size);
         
         // when the number is not already in the array
-        while (i != -1) {
-            if (choice == 'a')
+        if (i != -1) {
+            if (choice == 'a'){
                 addNumber(a, number, size);
-            else if (choice == 'r')
+                break;
+            }
+            else if (choice == 'r'){
                 removeNumber(a, number, size);
+                break;
+            }
         }
         cout << "your numbers: ";
         output(a, size);
